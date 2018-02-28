@@ -1,2 +1,5 @@
 *.vs/*
 *packages/*
+*.DotSettings
+bin
+obj
