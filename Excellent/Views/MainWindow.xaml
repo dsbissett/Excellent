@@ -1,0 +1,134 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Excellent.Views"
+        xmlns:properties="clr-namespace:Excellent.Properties"
+        xmlns:controls="clr-namespace:Excellent.Controls"
+        x:Class="Excellent.Views.MainWindow"
+        ResizeMode="NoResize"
+        mc:Ignorable="d" Height="379.711" Width="634.133" Background="Transparent" Foreground="Transparent">
+    <Window.Resources>
+        <!--<BitmapImage x:Key="Glock" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/glock.png"/>
+        <BitmapImage x:Key="AirHorn" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/airhornpic.png"/>
+        <BitmapImage x:Key="Cry" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/crying.png"/>
+        <BitmapImage x:Key="Weed" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/hurd.png"/>
+        <BitmapImage x:Key="Illuminati" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/illum.png"/>
+        <BitmapImage x:Key="Nuke" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/nuke.png"/>
+        <BitmapImage x:Key="Jeff" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/jeffry.png"/>
+        <BitmapImage x:Key="Win95" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/win311logo.png"/>
+        <BitmapImage x:Key="WinVista" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/vista.gif"/>
+        <BitmapImage x:Key="GruntPic" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/gruntpic.png"/>-->
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Command" Value="{Binding ButtonClickCommand}"/>
+            <Setter Property="CommandParameter" Value="{Binding RelativeSource={RelativeSource Self}}"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button Content="Excellent!" Name="Excellent" Background="Blue" Height="50" Foreground="Yellow" FontSize="30" FontFamily="Magneto" Cursor="Hand" />
+            <Button Content="God Damn!" Name="Goddamn001" Background="Orange" Height="50" Foreground="Blue" FontSize="30" FontFamily="Papyrus" Cursor="Hand" />
+            <Button Content="GOD DAMN!" Name="Goddamn002" Background="CornflowerBlue" Height="50" Foreground="White" FontSize="30" FontFamily="Comic Sans MS" Cursor="Hand" />
+            <Button Content="god damn!" Name="Goddamn003" Background="Tomato" Height="50" Foreground="MediumVioletRed" FontSize="30" FontFamily="Jokerman" Cursor="Hand" />
+            <Button Content="Cat Facts!" Name="CatFacts" Background="Chartreuse" Height="50" Foreground="MediumSeaGreen" FontSize="30" FontFamily="Jokerman" Cursor="Hand" />
+            <Button Name="GlockRari" Height="50" Background="Red" Foreground="White">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="{StaticResource Glock}"></Image>
+                    <TextBlock VerticalAlignment="Center">Glock in my Rari</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Name="Didi" Height="50" Background="DarkViolet" Foreground="GreenYellow" FontSize="30" Content="Dididi"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <Button Name="AirHorn" Height="50">
+                <StackPanel>
+                    <Image Source="{StaticResource AirHorn}" Height="45"/>
+                </StackPanel>
+            </Button>
+            <Button Name="AirPorn" Height="50">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="{StaticResource AirHorn}" Height="45"/>
+                    <Image Source="{StaticResource AirHorn}" Height="45"/>
+                    <Image Source="{StaticResource AirHorn}" Height="45"/>
+                </StackPanel>
+            </Button>
+            <Button Name="Weed" Height="50">
+                <StackPanel>
+                    <Image Source="{StaticResource Weed}" Height="45"></Image>
+                </StackPanel>
+            </Button>
+            <Button Name="TacticalNuke" Height="50">
+                <StackPanel>
+                    <Image Source="{DynamicResource Nuke}" Height="45"></Image>
+                </StackPanel>
+            </Button>
+            <Button Name="WhatchaSay" Height="50">
+                <StackPanel>
+                    <Image Source="{DynamicResource Crying}" Height="45"></Image>
+                </StackPanel>
+            </Button>
+            <Button Name="Illuminati" Height="50">
+                <StackPanel>
+                    <Image Source="{DynamicResource Illuminati}" Height="45"></Image>
+                </StackPanel>
+            </Button>
+            <Button Name="Jeff" Height="50">
+                <StackPanel>
+                    <Image Source="{DynamicResource Jeff}" Height="45"></Image>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2">
+            <Button Name="WinXP" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource Win311}" />
+                </Viewbox>
+            </Button>
+            <Button Name="WinVista" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource Vista}"></Image>
+                </Viewbox>
+            </Button>
+            <Button Name="Grunt" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource Grunt}"></Image>
+                </Viewbox>
+            </Button>
+            <Button Name="ComeHotel" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource ComeHotel}"></Image>
+                </Viewbox>
+            </Button>
+            <Button Name="Ultimate" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource Ultimate}"></Image>
+                </Viewbox>
+            </Button>
+            <Button Name="OhHellNaw" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource HellNaw}"></Image>
+                </Viewbox>
+            </Button>
+            <Button Name="Herbert" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource Buttplug}"></Image>
+                </Viewbox>
+            </Button>
+            <!--<controls:ImageButton Height="50" ButtonImage="{DynamicResource Hotel}" ButtonText="Asdasdasd" AudioCommand="{Binding Test000}" AudioCommandParameter="{Binding Asdf}"></controls:ImageButton>
+            <controls:ImageButton Height="50" x:Name="Grunt2" ButtonText="Asdasdasd"></controls:ImageButton>
+            <controls:ImageButton Height="50" x:Name="Grunt3" ButtonText="Asdasdasd"></controls:ImageButton>
+            <controls:ImageButton Height="50" x:Name="Grunt4" ButtonText="Asdasdasd"></controls:ImageButton>-->
+            <!--<Button Height="50"></Button>-->
+            <!--<Button Height="50"></Button>
+            <Button Height="50"></Button>
+            <Button Height="50"></Button>-->
+        </StackPanel>
+
+    </Grid>
+</Window>

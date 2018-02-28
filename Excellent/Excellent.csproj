@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4385BF2F-E1C5-4A0F-A255-96FA42B84869}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Excellent</RootNamespace>
+    <AssemblyName>Excellent</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>statuswarning2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Costura, Version=1.6.2.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.1.6.2\lib\dotnet\Costura.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Grace, Version=6.3.0.0, Culture=neutral, PublicKeyToken=b7d24c6367970497, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grace.6.3.0\lib\net45\Grace.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=1.20.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailKit.1.20.0\lib\net451\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=1.20.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeKit.1.20.0\lib\net451\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.8.0\lib\net35\NAudio.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI, Version=7.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\reactiveui-core.7.4.0\lib\Net45\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Splat.1.4.0\lib\Net45\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\net45\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\net45\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\net45\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\net45\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Windows.Threading, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-XAML.2.2.5\lib\net45\System.Reactive.Windows.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TestStack.White, Version=0.13.0.0, Culture=neutral, PublicKeyToken=2672efbf3e161801, processorArchitecture=MSIL">
+      <HintPath>..\packages\TestStack.White.0.13.3\lib\net40\TestStack.White.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Controls\ImageButton.xaml.cs">
+      <DependentUpon>ImageButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonHandlers\AudioButtonHandler.cs" />
+    <Compile Include="AudioHandlers\ByteArrayAudioHandler.cs" />
+    <Compile Include="AudioHandlers\EmptyWaveStream.cs" />
+    <Compile Include="AudioHandlers\WaveAudioHandler.cs" />
+    <Compile Include="Controls\ImageButtonUserControl.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\Interfaces\IMainWindowViewModel.cs" />
+    <Compile Include="ViewModels\Implementations\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\Interfaces\IViewModel.cs" />
+    <Page Include="Controls\ImageButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dictionaries\ButtonIcons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AudioHandlers\AudioHandler.cs" />
+    <Compile Include="AudioService.cs" />
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="ButtonHandlers\ButtonHandler.cs" />
+    <Compile Include="ButtonService.cs" />
+    <Compile Include="ButtonHandlers\CatFactsButtonHandler.cs" />
+    <Compile Include="CatFactsService.cs" />
+    <Compile Include="Covfefe.cs" />
+    <Compile Include="Interfaces\IAudioService.cs" />
+    <Compile Include="Interfaces\ICatFactsService.cs" />
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\EXCELLENT.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\GD1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\gd2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\gd3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FodyWeavers.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="statuswarning2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\glock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\didi.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\glock-rari.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AIRPORN.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AIRHORN.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\tactical nuke.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Whatcha Say.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SMOKE WEEK EVERYDAY.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\my name is jeff.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Illuminati Confirmed.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\airhornpic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\nuke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\hurd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\illum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\crying.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\jeffry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Windows Final Vista.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Windows XP.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\win311logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\vista.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Male Grunt-SoundBible.com-68178715.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\gruntpic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Brushes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\i_am_the_one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\come_hotel.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ultimate.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\hellnaw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ohhellnaw.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\herbert.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\buttplug.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.2.0.0\build\netstandard1.4\Fody.targets" Condition="Exists('..\packages\Fody.2.0.0\build\netstandard1.4\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.2.0.0\build\netstandard1.4\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.2.0.0\build\netstandard1.4\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets'))" />
+  </Target>
+  <Import Project="..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets" Condition="Exists('..\packages\Costura.Fody.1.6.2\build\dotnet\Costura.Fody.targets')" />
+</Project>

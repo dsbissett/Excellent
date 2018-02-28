@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:icons="clr-namespace:Excellent">
+    <BitmapImage x:Key="Glock" UriSource="pack://application:,,,/Resources/glock.png" />
+    <BitmapImage x:Key="AirHorn" UriSource="pack://application:,,,/Resources/airhornpic.png" />
+    <BitmapImage x:Key="Crying" UriSource="pack://application:,,,/Resources/crying.png"/>
+    <BitmapImage x:Key="Grunt" UriSource="pack://application:,,,/Resources/gruntpic.png"/>
+    <BitmapImage x:Key="Weed" UriSource="pack://application:,,,/Resources/hurd.png"/>
+    <BitmapImage x:Key="Illuminati" UriSource="pack://application:,,,/Resources/illum.png"/>
+    <BitmapImage x:Key="Jeff" UriSource="pack://application:,,,/Resources/jeffry.png"/>
+    <BitmapImage x:Key="Nuke" UriSource="pack://application:,,,/Resources/nuke.png"/>
+    <BitmapImage x:Key="Vista" UriSource="pack://application:,,,/Resources/vista.gif"/>
+    <BitmapImage x:Key="Win311" UriSource="pack://application:,,,/Resources/win311logo.png"/>
+    <BitmapImage x:Key="ComeHotel" UriSource="pack://application:,,,/Resources/hotel.png"/>
+    <BitmapImage x:Key="Ultimate" UriSource="pack://application:,,,/Resources/i_am_the_one.png"/>
+    <BitmapImage x:Key="HellNaw" UriSource="pack://application:,,,/Resources/hellnaw.png"/>
+    <BitmapImage x:Key="Buttplug" UriSource="pack://application:,,,/Resources/buttplug.png"></BitmapImage>
+</ResourceDictionary>
