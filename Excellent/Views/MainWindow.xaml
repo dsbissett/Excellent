@@ -30,6 +30,7 @@
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
             <Button Content="Excellent!" Name="Excellent" Background="Blue" Height="50" Foreground="Yellow" FontSize="30" FontFamily="Magneto" Cursor="Hand" />
@@ -120,6 +121,8 @@
                     <Image Source="{DynamicResource Buttplug}"></Image>
                 </Viewbox>
             </Button>
+            
+            
             <!--<controls:ImageButton Height="50" ButtonImage="{DynamicResource Hotel}" ButtonText="Asdasdasd" AudioCommand="{Binding Test000}" AudioCommandParameter="{Binding Asdf}"></controls:ImageButton>
             <controls:ImageButton Height="50" x:Name="Grunt2" ButtonText="Asdasdasd"></controls:ImageButton>
             <controls:ImageButton Height="50" x:Name="Grunt3" ButtonText="Asdasdasd"></controls:ImageButton>
@@ -128,6 +131,18 @@
             <!--<Button Height="50"></Button>
             <Button Height="50"></Button>
             <Button Height="50"></Button>-->
+        </StackPanel>
+        <StackPanel Grid.Column="3">
+            <Button Name="Att" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource Phone}"></Image>
+                </Viewbox>
+            </Button>
+            <Button Name="Dialup" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource Dialup}"></Image>
+                </Viewbox>
+            </Button>
         </StackPanel>
 
     </Grid>

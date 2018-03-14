@@ -91,6 +91,16 @@ namespace Excellent.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] Att {
+            get {
+                object obj = ResourceManager.GetObject("Att", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap buttplug {
@@ -126,6 +136,16 @@ namespace Excellent.Properties {
             get {
                 object obj = ResourceManager.GetObject("crying", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] Dialup {
+            get {
+                object obj = ResourceManager.GetObject("Dialup", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -347,6 +367,16 @@ namespace Excellent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap modem {
+            get {
+                object obj = ResourceManager.GetObject("modem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap nuke {
             get {
                 object obj = ResourceManager.GetObject("nuke", resourceCulture);
@@ -361,6 +391,16 @@ namespace Excellent.Properties {
             get {
                 object obj = ResourceManager.GetObject("OhHellNaw", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap phone {
+            get {
+                object obj = ResourceManager.GetObject("phone", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

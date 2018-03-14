@@ -14,5 +14,7 @@
     <BitmapImage x:Key="ComeHotel" UriSource="pack://application:,,,/Resources/hotel.png"/>
     <BitmapImage x:Key="Ultimate" UriSource="pack://application:,,,/Resources/i_am_the_one.png"/>
     <BitmapImage x:Key="HellNaw" UriSource="pack://application:,,,/Resources/hellnaw.png"/>
-    <BitmapImage x:Key="Buttplug" UriSource="pack://application:,,,/Resources/buttplug.png"></BitmapImage>
+    <BitmapImage x:Key="Buttplug" UriSource="pack://application:,,,/Resources/buttplug.png"/>
+    <BitmapImage x:Key="Dialup" UriSource="pack://application:,,,/Resources/modem.png"/>
+    <BitmapImage x:Key="Phone" UriSource="pack://application:,,,/Resources/phone.png"/>
 </ResourceDictionary>
