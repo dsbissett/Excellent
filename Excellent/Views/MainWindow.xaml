@@ -143,6 +143,11 @@
                     <Image Source="{DynamicResource Dialup}"></Image>
                 </Viewbox>
             </Button>
+            <Button Name="Curb" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource Curb}"></Image>
+                </Viewbox>
+            </Button>
         </StackPanel>
 
     </Grid>

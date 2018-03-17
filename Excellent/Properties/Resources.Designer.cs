@@ -142,6 +142,26 @@ namespace Excellent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        public static byte[] Curb {
+            get {
+                object obj = ResourceManager.GetObject("Curb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap curb1 {
+            get {
+                object obj = ResourceManager.GetObject("curb1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         public static byte[] Dialup {
             get {
                 object obj = ResourceManager.GetObject("Dialup", resourceCulture);

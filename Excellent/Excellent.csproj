@@ -322,6 +322,12 @@
   <ItemGroup>
     <Resource Include="Resources\modem.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\curb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\curb.mp3" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.2.0.0\build\netstandard1.4\Fody.targets" Condition="Exists('..\packages\Fody.2.0.0\build\netstandard1.4\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
