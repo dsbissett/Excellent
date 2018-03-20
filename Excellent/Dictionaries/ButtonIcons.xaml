@@ -20,4 +20,6 @@
     <BitmapImage x:Key="Curb" UriSource="pack://application:,,,/Resources/curb.png"/>
     <BitmapImage x:Key="Bbq" UriSource="pack://application:,,,/Resources/Bbq1.png"/>
     <BitmapImage x:Key="Problem" UriSource="pack://application:,,,/Resources/problem.png"/>
+    <BitmapImage x:Key="Arg" UriSource="pack://application:,,,/Resources/arg.png"/>
+    <BitmapImage x:Key="LikeSomdodi" UriSource="pack://application:,,,/Resources/likeSumbodi.png"/>
 </ResourceDictionary>

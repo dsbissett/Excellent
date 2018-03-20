@@ -154,9 +154,19 @@
                     <Image Source="{DynamicResource Bbq}"></Image>
                 </Viewbox>
             </Button>
-            <Button Name="ProblemBuk" Height="50">
+            <Button Name="Problem" Height="50">
                 <Viewbox>
                     <Image Source="{DynamicResource Problem}"></Image>
+                </Viewbox>
+            </Button>
+            <Button Name="LikeSumbodi" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource LikeSomdodi}"></Image>
+                </Viewbox>
+            </Button>
+            <Button Name="BukArg" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource Arg}"></Image>
                 </Viewbox>
             </Button>
         </StackPanel>

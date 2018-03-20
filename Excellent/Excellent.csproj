@@ -326,7 +326,13 @@
     <Resource Include="Resources\curb.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Problem.mp3" />
+    <Resource Include="Resources\arg.png" />
+    <None Include="Resources\Arg.mp3" />
     <Content Include="Resources\bbq.mp3" />
+    <Content Include="Resources\BukArg.mp3" />
+    <Content Include="Resources\LikeSumbodi.mp3" />
+    <Resource Include="Resources\likeSumbodi.png" />
     <Content Include="Resources\proble-buk.mp3" />
     <None Include="Resources\ProblemBuk.mp3" />
     <Resource Include="Resources\problem.png" />
