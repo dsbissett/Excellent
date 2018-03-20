@@ -250,4 +250,28 @@
   <data name="phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Curb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\curb.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="curb1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\curb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bbq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbq.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bbq1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbq1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BukArg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BukArg.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BukArg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BukArg.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LikeSumbodi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LikeSumbodi.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Problem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Problem.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

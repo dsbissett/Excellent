@@ -101,6 +101,46 @@ namespace Excellent.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] Bbq {
+            get {
+                object obj = ResourceManager.GetObject("Bbq", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap bbq1 {
+            get {
+                object obj = ResourceManager.GetObject("bbq1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] BukArg {
+            get {
+                object obj = ResourceManager.GetObject("BukArg", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] BukArg1 {
+            get {
+                object obj = ResourceManager.GetObject("BukArg1", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap buttplug {
@@ -135,6 +175,26 @@ namespace Excellent.Properties {
         public static System.Drawing.Bitmap crying {
             get {
                 object obj = ResourceManager.GetObject("crying", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] Curb {
+            get {
+                object obj = ResourceManager.GetObject("Curb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap curb1 {
+            get {
+                object obj = ResourceManager.GetObject("curb1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -365,6 +425,16 @@ namespace Excellent.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] LikeSumbodi {
+            get {
+                object obj = ResourceManager.GetObject("LikeSumbodi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap modem {
@@ -401,6 +471,16 @@ namespace Excellent.Properties {
             get {
                 object obj = ResourceManager.GetObject("phone", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] Problem {
+            get {
+                object obj = ResourceManager.GetObject("Problem", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
