@@ -139,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Audio\airhorn.mp3" />
+    <Content Include="Resources\Audio\bbq.mp3" />
     <Content Include="Resources\Audio\excellent.mp3" />
     <Resource Include="Resources\Image\airhorn.png" />
     <Content Include="Resources\Audio\airporn.mp3" />

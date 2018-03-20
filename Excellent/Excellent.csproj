@@ -326,6 +326,8 @@
     <Resource Include="Resources\curb.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\bbq.mp3" />
+    <Resource Include="Resources\bbq1.png" />
     <Content Include="Resources\curb.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

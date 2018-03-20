@@ -148,6 +148,11 @@
                     <Image Source="{DynamicResource Curb}"></Image>
                 </Viewbox>
             </Button>
+            <Button Name="Bbq" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource Bbq}"></Image>
+                </Viewbox>
+            </Button>
         </StackPanel>
 
     </Grid>

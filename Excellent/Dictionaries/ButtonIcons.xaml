@@ -18,4 +18,5 @@
     <BitmapImage x:Key="Dialup" UriSource="pack://application:,,,/Resources/modem.png"/>
     <BitmapImage x:Key="Phone" UriSource="pack://application:,,,/Resources/phone.png"/>
     <BitmapImage x:Key="Curb" UriSource="pack://application:,,,/Resources/curb.png"/>
+    <BitmapImage x:Key="Bbq" UriSource="pack://application:,,,/Resources/Bbq1.png"/>
 </ResourceDictionary>
