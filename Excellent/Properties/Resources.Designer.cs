@@ -445,6 +445,16 @@ namespace Excellent.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] ProblemBuk {
+            get {
+                object obj = ResourceManager.GetObject("ProblemBuk", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Excellent.exe.
         /// </summary>
         public static string ProcessName {

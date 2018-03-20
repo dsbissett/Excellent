@@ -123,6 +123,7 @@
             </Button>
             
             
+            
             <!--<controls:ImageButton Height="50" ButtonImage="{DynamicResource Hotel}" ButtonText="Asdasdasd" AudioCommand="{Binding Test000}" AudioCommandParameter="{Binding Asdf}"></controls:ImageButton>
             <controls:ImageButton Height="50" x:Name="Grunt2" ButtonText="Asdasdasd"></controls:ImageButton>
             <controls:ImageButton Height="50" x:Name="Grunt3" ButtonText="Asdasdasd"></controls:ImageButton>
@@ -151,6 +152,11 @@
             <Button Name="Bbq" Height="50">
                 <Viewbox>
                     <Image Source="{DynamicResource Bbq}"></Image>
+                </Viewbox>
+            </Button>
+            <Button Name="ProblemBuk" Height="50">
+                <Viewbox>
+                    <Image Source="{DynamicResource Problem}"></Image>
                 </Viewbox>
             </Button>
         </StackPanel>

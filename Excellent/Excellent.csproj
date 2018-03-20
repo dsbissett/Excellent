@@ -327,6 +327,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\bbq.mp3" />
+    <Content Include="Resources\proble-buk.mp3" />
+    <None Include="Resources\ProblemBuk.mp3" />
+    <Resource Include="Resources\problem.png" />
     <Resource Include="Resources\bbq1.png" />
     <Content Include="Resources\curb.mp3" />
   </ItemGroup>
