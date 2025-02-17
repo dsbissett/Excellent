@@ -1,9 +1,12 @@
-﻿namespace Excellent.ViewModels.Interfaces
+﻿using System.Windows.Controls;
+
+namespace Excellent.ViewModels.Interfaces
 {
     using ReactiveUI;
+    using System.Reactive;
 
     public interface IMainWindowViewModel : IViewModel
     {
-        ReactiveCommand ButtonClickCommand { get; }
+        ReactiveCommand<Button, Unit> ButtonClickCommand { get; }
     }
 }

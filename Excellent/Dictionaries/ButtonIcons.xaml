@@ -22,4 +22,14 @@
     <BitmapImage x:Key="Problem" UriSource="pack://application:,,,/Resources/problem.png"/>
     <BitmapImage x:Key="Arg" UriSource="pack://application:,,,/Resources/arg.png"/>
     <BitmapImage x:Key="LikeSomdodi" UriSource="pack://application:,,,/Resources/likeSumbodi.png"/>
+    <BitmapImage x:Key="ahhh" UriSource="pack://application:,,,/Resources/ahh.png"/>
+    <BitmapImage x:Key="Android" UriSource="pack://application:,,,/Resources/android.png"/>
+    <BitmapImage x:Key="alert" UriSource="pack://application:,,,/Resources/alert.png"/>
+    <BitmapImage x:Key="quack" UriSource="pack://application:,,,/Resources/quack.png"/>
+    <BitmapImage x:Key="crickets" UriSource="pack://application:,,,/Resources/crickets.png"/>
+    <BitmapImage x:Key="urfine" UriSource="pack://application:,,,/Resources/urfine.png"/>
+    <BitmapImage x:Key="kidscheer" UriSource="pack://application:,,,/Resources/kidscheer.png"/>
+    <BitmapImage x:Key="heavenly" UriSource="pack://application:,,,/Resources/heavenly.png"/>
+    <BitmapImage x:Key="brb" UriSource="pack://application:,,,/Resources/brb.png"/>
+    <BitmapImage x:Key="wth" UriSource="pack://application:,,,/Resources/wth.png"/>
 </ResourceDictionary>

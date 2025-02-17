@@ -274,4 +274,64 @@
   <data name="Problem" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Problem.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Android" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\android.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ahh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ahh.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ahhh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ahh.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="droidpan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\droidpan.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="quack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quack.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="quackt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quack.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="alert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alert.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="alertico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alert.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="crickets" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crickets.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cricketsico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crickets.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="urfine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\urfine.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="urfineico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\urfine.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kidscheer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kidscheer.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kidscheerico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kidscheer.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavenly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heavenly.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="heavenlyico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heavenly.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="brb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brb.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="brbico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brb.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="wth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wth.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="wthico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wth.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

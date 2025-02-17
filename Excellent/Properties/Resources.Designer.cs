@@ -19,7 +19,7 @@ namespace Excellent.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -63,6 +63,26 @@ namespace Excellent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        public static byte[] Ahh {
+            get {
+                object obj = ResourceManager.GetObject("Ahh", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] ahhh {
+            get {
+                object obj = ResourceManager.GetObject("ahhh", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         public static byte[] AirHorn {
             get {
                 object obj = ResourceManager.GetObject("AirHorn", resourceCulture);
@@ -86,6 +106,36 @@ namespace Excellent.Properties {
         public static byte[] AirPorn {
             get {
                 object obj = ResourceManager.GetObject("AirPorn", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] alert {
+            get {
+                object obj = ResourceManager.GetObject("alert", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] alertico {
+            get {
+                object obj = ResourceManager.GetObject("alertico", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] Android {
+            get {
+                object obj = ResourceManager.GetObject("Android", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -117,6 +167,26 @@ namespace Excellent.Properties {
             get {
                 object obj = ResourceManager.GetObject("bbq1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] brb {
+            get {
+                object obj = ResourceManager.GetObject("brb", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] brbico {
+            get {
+                object obj = ResourceManager.GetObject("brbico", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -170,6 +240,26 @@ namespace Excellent.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] crickets {
+            get {
+                object obj = ResourceManager.GetObject("crickets", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] cricketsico {
+            get {
+                object obj = ResourceManager.GetObject("cricketsico", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap crying {
@@ -215,6 +305,16 @@ namespace Excellent.Properties {
         public static byte[] Didi {
             get {
                 object obj = ResourceManager.GetObject("Didi", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] droidpan {
+            get {
+                object obj = ResourceManager.GetObject("droidpan", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -335,6 +435,26 @@ namespace Excellent.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] heavenly {
+            get {
+                object obj = ResourceManager.GetObject("heavenly", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] heavenlyico {
+            get {
+                object obj = ResourceManager.GetObject("heavenlyico", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap hellnaw {
@@ -427,6 +547,26 @@ namespace Excellent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        public static byte[] kidscheer {
+            get {
+                object obj = ResourceManager.GetObject("kidscheer", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] kidscheerico {
+            get {
+                object obj = ResourceManager.GetObject("kidscheerico", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         public static byte[] LikeSumbodi {
             get {
                 object obj = ResourceManager.GetObject("LikeSumbodi", resourceCulture);
@@ -496,6 +636,26 @@ namespace Excellent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        public static byte[] quack {
+            get {
+                object obj = ResourceManager.GetObject("quack", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] quackt {
+            get {
+                object obj = ResourceManager.GetObject("quackt", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         public static byte[] TacticalNuke {
             get {
                 object obj = ResourceManager.GetObject("TacticalNuke", resourceCulture);
@@ -509,6 +669,26 @@ namespace Excellent.Properties {
         public static byte[] Ultimate {
             get {
                 object obj = ResourceManager.GetObject("Ultimate", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] urfine {
+            get {
+                object obj = ResourceManager.GetObject("urfine", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] urfineico {
+            get {
+                object obj = ResourceManager.GetObject("urfineico", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -569,6 +749,26 @@ namespace Excellent.Properties {
         public static byte[] WinXP {
             get {
                 object obj = ResourceManager.GetObject("WinXP", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] wth {
+            get {
+                object obj = ResourceManager.GetObject("wth", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] wthico {
+            get {
+                object obj = ResourceManager.GetObject("wthico", resourceCulture);
                 return ((byte[])(obj));
             }
         }

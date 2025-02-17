@@ -26,150 +26,211 @@
         </Style>
     </Window.Resources>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="5*"/>
-        </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0">
-            <Button Content="Excellent!" Name="Excellent" Background="Blue" Height="50" Foreground="Yellow" FontSize="30" FontFamily="Magneto" Cursor="Hand" />
-            <Button Content="God Damn!" Name="Goddamn001" Background="Orange" Height="50" Foreground="Blue" FontSize="30" FontFamily="Papyrus" Cursor="Hand" />
-            <Button Content="GOD DAMN!" Name="Goddamn002" Background="CornflowerBlue" Height="50" Foreground="White" FontSize="30" FontFamily="Comic Sans MS" Cursor="Hand" />
-            <Button Content="god damn!" Name="Goddamn003" Background="Tomato" Height="50" Foreground="MediumVioletRed" FontSize="30" FontFamily="Jokerman" Cursor="Hand" />
-            <Button Content="Cat Facts!" Name="CatFacts" Background="Chartreuse" Height="50" Foreground="MediumSeaGreen" FontSize="30" FontFamily="Jokerman" Cursor="Hand" />
-            <Button Name="GlockRari" Height="50" Background="Red" Foreground="White">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="{StaticResource Glock}"></Image>
-                    <TextBlock VerticalAlignment="Center">Glock in my Rari</TextBlock>
-                </StackPanel>
-            </Button>
-            <Button Name="Didi" Height="50" Background="DarkViolet" Foreground="GreenYellow" FontSize="30" Content="Dididi"/>
-        </StackPanel>
-        <StackPanel Grid.Column="1">
-            <Button Name="AirHorn" Height="50">
-                <StackPanel>
-                    <Image Source="{StaticResource AirHorn}" Height="45"/>
-                </StackPanel>
-            </Button>
-            <Button Name="AirPorn" Height="50">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="{StaticResource AirHorn}" Height="45"/>
-                    <Image Source="{StaticResource AirHorn}" Height="45"/>
-                    <Image Source="{StaticResource AirHorn}" Height="45"/>
-                </StackPanel>
-            </Button>
-            <Button Name="Weed" Height="50">
-                <StackPanel>
-                    <Image Source="{StaticResource Weed}" Height="45"></Image>
-                </StackPanel>
-            </Button>
-            <Button Name="TacticalNuke" Height="50">
-                <StackPanel>
-                    <Image Source="{DynamicResource Nuke}" Height="45"></Image>
-                </StackPanel>
-            </Button>
-            <Button Name="WhatchaSay" Height="50">
-                <StackPanel>
-                    <Image Source="{DynamicResource Crying}" Height="45"></Image>
-                </StackPanel>
-            </Button>
-            <Button Name="Illuminati" Height="50">
-                <StackPanel>
-                    <Image Source="{DynamicResource Illuminati}" Height="45"></Image>
-                </StackPanel>
-            </Button>
-            <Button Name="Jeff" Height="50">
-                <StackPanel>
-                    <Image Source="{DynamicResource Jeff}" Height="45"></Image>
-                </StackPanel>
-            </Button>
-        </StackPanel>
-        <StackPanel Grid.Column="2">
-            <Button Name="WinXP" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource Win311}" />
-                </Viewbox>
-            </Button>
-            <Button Name="WinVista" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource Vista}"></Image>
-                </Viewbox>
-            </Button>
-            <Button Name="Grunt" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource Grunt}"></Image>
-                </Viewbox>
-            </Button>
-            <Button Name="ComeHotel" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource ComeHotel}"></Image>
-                </Viewbox>
-            </Button>
-            <Button Name="Ultimate" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource Ultimate}"></Image>
-                </Viewbox>
-            </Button>
-            <Button Name="OhHellNaw" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource HellNaw}"></Image>
-                </Viewbox>
-            </Button>
-            <Button Name="Herbert" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource Buttplug}"></Image>
-                </Viewbox>
-            </Button>
-            
-            
-            
-            <!--<controls:ImageButton Height="50" ButtonImage="{DynamicResource Hotel}" ButtonText="Asdasdasd" AudioCommand="{Binding Test000}" AudioCommandParameter="{Binding Asdf}"></controls:ImageButton>
-            <controls:ImageButton Height="50" x:Name="Grunt2" ButtonText="Asdasdasd"></controls:ImageButton>
-            <controls:ImageButton Height="50" x:Name="Grunt3" ButtonText="Asdasdasd"></controls:ImageButton>
-            <controls:ImageButton Height="50" x:Name="Grunt4" ButtonText="Asdasdasd"></controls:ImageButton>-->
-            <!--<Button Height="50"></Button>-->
-            <!--<Button Height="50"></Button>
-            <Button Height="50"></Button>
-            <Button Height="50"></Button>-->
-        </StackPanel>
-        <StackPanel Grid.Column="3">
-            <Button Name="Att" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource Phone}"></Image>
-                </Viewbox>
-            </Button>
-            <Button Name="Dialup" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource Dialup}"></Image>
-                </Viewbox>
-            </Button>
-            <Button Name="Curb" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource Curb}"></Image>
-                </Viewbox>
-            </Button>
-            <Button Name="Bbq" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource Bbq}"></Image>
-                </Viewbox>
-            </Button>
-            <Button Name="Problem" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource Problem}"></Image>
-                </Viewbox>
-            </Button>
-            <Button Name="LikeSumbodi" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource LikeSomdodi}"></Image>
-                </Viewbox>
-            </Button>
-            <Button Name="BukArg" Height="50">
-                <Viewbox>
-                    <Image Source="{DynamicResource Arg}"></Image>
-                </Viewbox>
-            </Button>
-        </StackPanel>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <Button Content="Excellent!" Name="Excellent" Background="Blue" Height="50" Foreground="Yellow" FontSize="30" FontFamily="Magneto" Cursor="Hand" />
+                <Button Content="God Damn!" Name="Goddamn001" Background="Orange" Height="50" Foreground="Blue" FontSize="30" FontFamily="Papyrus" Cursor="Hand" />
+                <Button Content="GOD DAMN!" Name="Goddamn002" Background="CornflowerBlue" Height="50" Foreground="White" FontSize="30" FontFamily="Comic Sans MS" Cursor="Hand" />
+                <Button Content="god damn!" Name="Goddamn003" Background="Tomato" Height="50" Foreground="MediumVioletRed" FontSize="30" FontFamily="Jokerman" Cursor="Hand" />
+                <Button Content="Cat Facts!" Name="CatFacts" Background="Chartreuse" Height="50" Foreground="MediumSeaGreen" FontSize="30" FontFamily="Jokerman" Cursor="Hand" />
+                <Button Name="GlockRari" Height="50" Background="Red" Foreground="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{StaticResource Glock}"></Image>
+                        <TextBlock VerticalAlignment="Center">Glock in my Rari</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Name="Didi" Height="50" Background="DarkViolet" Foreground="GreenYellow" FontSize="30" Content="Dididi"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <Button Name="AirHorn" Height="50">
+                    <StackPanel>
+                        <Image Source="{StaticResource AirHorn}" Height="45"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="AirPorn" Height="50">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{StaticResource AirHorn}" Height="45"/>
+                        <Image Source="{StaticResource AirHorn}" Height="45"/>
+                        <Image Source="{StaticResource AirHorn}" Height="45"/>
+                    </StackPanel>
+                </Button>
+                <Button Name="Weed" Height="50">
+                    <StackPanel>
+                        <Image Source="{StaticResource Weed}" Height="45"></Image>
+                    </StackPanel>
+                </Button>
+                <Button Name="TacticalNuke" Height="50">
+                    <StackPanel>
+                        <Image Source="{DynamicResource Nuke}" Height="45"></Image>
+                    </StackPanel>
+                </Button>
+                <Button Name="WhatchaSay" Height="50">
+                    <StackPanel>
+                        <Image Source="{DynamicResource Crying}" Height="45"></Image>
+                    </StackPanel>
+                </Button>
+                <Button Name="Illuminati" Height="50">
+                    <StackPanel>
+                        <Image Source="{DynamicResource Illuminati}" Height="45"></Image>
+                    </StackPanel>
+                </Button>
+                <Button Name="Jeff" Height="50">
+                    <StackPanel>
+                        <Image Source="{DynamicResource Jeff}" Height="45"></Image>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Column="2">
+                <Button Name="WinXP" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource Win311}" />
+                    </Viewbox>
+                </Button>
+                <Button Name="WinVista" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource Vista}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="Grunt" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource Grunt}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="ComeHotel" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource ComeHotel}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="Ultimate" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource Ultimate}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="OhHellNaw" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource HellNaw}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="Herbert" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource Buttplug}"></Image>
+                    </Viewbox>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Column="3">
+                <Button Name="Att" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource Phone}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="Dialup" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource Dialup}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="Curb" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource Curb}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="Bbq" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource Bbq}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="Problem" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource Problem}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="LikeSumbodi" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource LikeSomdodi}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="BukArg" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource Arg}"></Image>
+                    </Viewbox>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Column="4">
+                <Button Name="ahhh" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource ahhh}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="droidpan" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource Android}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="alert" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource alert}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="brb" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource brb}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="crickets" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource crickets}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="heavenly" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource heavenly}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="kidscheer" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource kidscheer}"></Image>
+                    </Viewbox>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Column="5">
+                <Button Name="quackt" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource quack}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="urfine" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource urfine}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="wth" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource wth}"></Image>
+                    </Viewbox>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <Button Grid.Row="1" 
+                Name="StopButton"
+                Command="{Binding StopSoundsCommand}"
+                Height="50" 
+                Background="Red" 
+                Foreground="White" 
+                FontSize="24" 
+                FontWeight="Bold"
+                Content="STOP ALL SOUNDS"
+                Style="{x:Null}"
+                Margin="10"/>
     </Grid>
 </Window>

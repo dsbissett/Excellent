@@ -37,7 +37,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>statuswarning2.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
@@ -194,6 +195,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
@@ -210,9 +212,6 @@
     <None Include="FodyWeavers.xml">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="statuswarning2.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\glock.png" />
@@ -326,11 +325,31 @@
     <Resource Include="Resources\curb.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\alert.mp3" />
+    <Resource Include="Resources\alert.png" />
+    <Content Include="Resources\brb.mp3" />
+    <Resource Include="Resources\brb.png" />
+    <Content Include="Resources\crickets.mp3" />
+    <Resource Include="Resources\crickets.png" />
+    <Content Include="Resources\heavenly.mp3" />
+    <Resource Include="Resources\heavenly.png" />
+    <Content Include="Resources\kidscheer.mp3" />
+    <Resource Include="Resources\kidscheer.png" />
+    <Content Include="Resources\quack.mp3" />
+    <Resource Include="Resources\quack.png" />
+    <Content Include="Resources\urfine.mp3" />
+    <Resource Include="Resources\urfine.png" />
+    <Content Include="Resources\wth.mp3" />
+    <Resource Include="Resources\wth.png" />
     <None Include="Resources\Problem.mp3" />
     <Resource Include="Resources\arg.png" />
     <None Include="Resources\Arg.mp3" />
+    <Resource Include="Resources\ahh.png" />
+    <Resource Include="Resources\android.png" />
+    <Content Include="Resources\ahh.mp3" />
     <Content Include="Resources\bbq.mp3" />
     <Content Include="Resources\BukArg.mp3" />
+    <Content Include="Resources\droidpan.mp3" />
     <Content Include="Resources\LikeSumbodi.mp3" />
     <Resource Include="Resources\likeSumbodi.png" />
     <Content Include="Resources\proble-buk.mp3" />
