@@ -295,6 +295,11 @@
                         <Image Source="{DynamicResource teamscall}"></Image>
                     </Viewbox>
                 </Button>
+                <Button Name="outlook" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource outlook}"></Image>
+                    </Viewbox>
+                </Button>
             </StackPanel>
         </Grid>
         <Button Grid.Row="1" 

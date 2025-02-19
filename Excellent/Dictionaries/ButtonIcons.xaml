@@ -46,5 +46,5 @@
     <BitmapImage x:Key="skypecallend" UriSource="pack://application:,,,/Resources/hangup.png" />
     <BitmapImage x:Key="teamscall" UriSource="pack://application:,,,/Resources/teams.png" />
     <BitmapImage x:Key="drdre" UriSource="pack://application:,,,/Resources/lastepisode.png"></BitmapImage>
-   
+   <BitmapImage x:Key="outlook" UriSource="pack://application:,,,/Resources/outlook.png"></BitmapImage>
 </ResourceDictionary>

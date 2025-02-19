@@ -351,6 +351,8 @@
     <Resource Include="Resources\kidscheer.png" />
     <Resource Include="Resources\lastepisode.png" />
     <Content Include="Resources\liljon.mp3" />
+    <Content Include="Resources\outlook.mp3" />
+    <Resource Include="Resources\outlook.png" />
     <Content Include="Resources\quack.mp3" />
     <Resource Include="Resources\quack.png" />
     <Content Include="Resources\ringdoorbell.mp3" />
