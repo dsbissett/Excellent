@@ -334,4 +334,85 @@
   <data name="wthico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wth.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="africafuneral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\africafuneral.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bingbingbing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bingbingbing.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="darude" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\darude.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="drdre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drdre.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fbcall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fbcall.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="helicopter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helicopter.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iphonenotification" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iphonenotification.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="liljon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\liljon.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ringdoorbell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ringdoorbell.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="run" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\run.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="runmeme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\runmeme.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="skypecall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skypecall.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="skypecallend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skypecallend.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="teamscall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teamscall.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="apple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\apple.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bing.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="doorbell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doorbell.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\facebook.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="funeral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\funeral.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangup.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="helicopter2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\helicopter.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lastepisode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lastepisode.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="run2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\run.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sandstorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sandstorm.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="skype" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skype.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slide.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="teams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teams.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

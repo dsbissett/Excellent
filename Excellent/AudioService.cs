@@ -49,6 +49,17 @@ namespace Excellent
                 {
                     reader.Position = 0;
                     waveOutEvent.Init(reader);
+
+                    waveOutEvent.PlaybackStopped += (s, e) =>
+                    {
+                        lock (lockObject)
+                        {
+                            activeOutputs.Remove(waveOutEvent);
+                        }
+                        reader.Dispose();
+                        waveOutEvent.Dispose();
+                    };
+                    
                     activeOutputs.Add(waveOutEvent);
                     waveOutEvent.Play();
                 }
@@ -59,16 +70,6 @@ namespace Excellent
                     throw;
                 }
             }
-            
-            waveOutEvent.PlaybackStopped += (s, e) =>
-            {
-                lock (lockObject)
-                {
-                    activeOutputs.Remove(waveOutEvent);
-                }
-                reader.Dispose();
-                waveOutEvent.Dispose();
-            };
         }
 
         public Task PlaySoundAsync(object obj) => Task.Run(() =>
@@ -77,7 +78,7 @@ namespace Excellent
             this.PlaySound(reader);
         });
 
-        public void StopAllSounds()
+        public async Task StopAllSounds()
         {
             isStopping = true;
             
@@ -97,8 +98,9 @@ namespace Excellent
                 activeOutputs.Clear();
             }
 
-            // Add a small delay before allowing new sounds
-            Task.Delay(100).ContinueWith(_ => isStopping = false);
+            // Wait for the delay before allowing new sounds
+            await Task.Delay(100);
+            isStopping = false;
         }
     }
 }

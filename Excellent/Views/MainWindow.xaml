@@ -8,7 +8,7 @@
         xmlns:controls="clr-namespace:Excellent.Controls"
         x:Class="Excellent.Views.MainWindow"
         ResizeMode="NoResize"
-        mc:Ignorable="d" Height="379.711" Width="634.133" Background="Transparent" Foreground="Transparent">
+        mc:Ignorable="d" Height="450" Width="1000" Background="Transparent" Foreground="Transparent">
     <Window.Resources>
         <!--<BitmapImage x:Key="Glock" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/glock.png"/>
         <BitmapImage x:Key="AirHorn" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/airhornpic.png"/>
@@ -32,6 +32,8 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="6*"/>
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="5*"/>
@@ -217,6 +219,80 @@
                 <Button Name="wth" Height="50">
                     <Viewbox>
                         <Image Source="{DynamicResource wth}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="africafuneral" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource africafuneral}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="bingbingbing" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource bingbingbing}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="darude" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource darude}"></Image>
+                    </Viewbox>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Column="6">
+                <Button Name="drdre" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource drdre}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="fbcall" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource fbcall}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="helicopter" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource helicopter}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="iphonenotification" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource iphonenotification}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="liljon" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource liljon}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="ringdoorbell" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource ringdoorbell}"></Image>
+                    </Viewbox>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Column="7">
+                <Button Name="run" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource run}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="runmeme" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource runmeme}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="skypecall" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource skypecall}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="skypecallend" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource skypecallend}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="teamscall" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource teamscall}"></Image>
                     </Viewbox>
                 </Button>
             </StackPanel>

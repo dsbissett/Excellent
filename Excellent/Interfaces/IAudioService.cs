@@ -5,6 +5,6 @@
     public interface IAudioService
     {
         Task PlaySoundAsync(object obj);
-        void StopAllSounds();
+        Task StopAllSounds();
     }
 }

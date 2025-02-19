@@ -14,7 +14,7 @@ namespace Excellent.ViewModels.Implementations
         private readonly IAudioService audioService;
         private readonly IButtonService buttonService;
 
-        public ICommand StopSoundsCommand { get; }
+        public ReactiveCommand<Unit, Unit> StopSoundsCommand { get; }
         
         public ReactiveCommand<Button, Unit> ButtonClickCommand { get; }
 
@@ -23,7 +23,7 @@ namespace Excellent.ViewModels.Implementations
             this.audioService = audioService;
             this.buttonService = buttonService;
             
-            StopSoundsCommand = ReactiveCommand.Create(() => audioService.StopAllSounds());
+            StopSoundsCommand = ReactiveCommand.CreateFromTask(async () => await audioService.StopAllSounds());
             
             ButtonClickCommand = ReactiveCommand.CreateFromTask<Button>(
                 async button => await buttonService.WhenButtonClicked(button));
