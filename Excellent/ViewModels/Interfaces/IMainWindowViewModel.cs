@@ -8,5 +8,7 @@ namespace Excellent.ViewModels.Interfaces
     public interface IMainWindowViewModel : IViewModel
     {
         ReactiveCommand<Button, Unit> ButtonClickCommand { get; }
+        void RegisterButton(Button button);
+        void Cleanup();
     }
 }

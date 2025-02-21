@@ -157,6 +157,12 @@
   <data name="glock_rari" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\audio\glock-rari.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="glorilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glorilla.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="glorillahuh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glorillahuh.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="grunt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\audio\grunt.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

@@ -123,6 +123,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ColorHelper.cs" />
     <Compile Include="Controls\ImageButton.xaml.cs">
       <DependentUpon>ImageButton.xaml</DependentUpon>
     </Compile>
@@ -342,6 +343,8 @@
     <Content Include="Resources\fbcall.mp3" />
     <Resource Include="Resources\funeral.png" />
     <Resource Include="Resources\hangup.png" />
+    <Content Include="Resources\glorillahuh.mp3" />
+    <Resource Include="Resources\glorilla.png" />
     <Content Include="Resources\heavenly.mp3" />
     <Resource Include="Resources\heavenly.png" />
     <Content Include="Resources\helicopter.mp3" />

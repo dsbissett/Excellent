@@ -236,6 +236,11 @@
                         <Image Source="{DynamicResource darude}"></Image>
                     </Viewbox>
                 </Button>
+                <Button Name="glorillahuh" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource glorilla}"></Image>
+                    </Viewbox>
+                </Button>
             </StackPanel>
             <StackPanel Grid.Column="6">
                 <Button Name="drdre" Height="50">
