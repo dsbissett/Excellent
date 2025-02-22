@@ -6,9 +6,11 @@
         xmlns:local="clr-namespace:Excellent.Views"
         xmlns:properties="clr-namespace:Excellent.Properties"
         xmlns:controls="clr-namespace:Excellent.Controls"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:behaviors="clr-namespace:Excellent.Behaviors"
         x:Class="Excellent.Views.MainWindow"
         ResizeMode="NoResize"
-        mc:Ignorable="d" Height="450" Width="1000" Background="Transparent" Foreground="Transparent">
+        mc:Ignorable="d" Height="500" Width="1000" Background="Transparent" Foreground="Transparent">
     <Window.Resources>
         <!--<BitmapImage x:Key="Glock" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/glock.png"/>
         <BitmapImage x:Key="AirHorn" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/airhornpic.png"/>
@@ -27,10 +29,58 @@
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
+        
         <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ToggleButton Grid.Column="0" 
+                          Content="Color Change Effect" 
+                          Name="ColorChangeToggle"
+                          Command="{Binding ToggleColorChangeCommand}"
+                          CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Self}}"
+                          IsChecked="True"
+                          Height="30" 
+                          Margin="10,5"
+                          HorizontalAlignment="Left"/>
+
+            <StackPanel Grid.Column="1" 
+                        Orientation="Horizontal" 
+                        Margin="10,5">
+                <TextBlock Text="Pitch: " 
+                          VerticalAlignment="Center" 
+                          Margin="0,0,5,0"/>
+                <Slider Width="150"
+                        Minimum="0.5"
+                        Maximum="2.0"
+                        TickFrequency="0.1"
+                        IsSnapToTickEnabled="True"
+                        VerticalAlignment="Center">
+                    <i:Interaction.Behaviors>
+                        <behaviors:EventToCommandBehavior 
+                            Event="ValueChanged" 
+                            Command="{Binding SetPitchCommand}"
+                            CommandParameter="{Binding Value, RelativeSource={RelativeSource AncestorType=Slider}}"/>
+                    </i:Interaction.Behaviors>
+                </Slider>
+                <TextBlock VerticalAlignment="Center"
+                           Margin="5,0,0,0">
+                    <TextBlock.Text>
+                        <MultiBinding StringFormat="{}{0:F1}x">
+                            <Binding Path="PitchValue"/>
+                        </MultiBinding>
+                    </TextBlock.Text>
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="9*"/>
                 <ColumnDefinition Width="6*"/>
@@ -273,6 +323,11 @@
                         <Image Source="{DynamicResource ringdoorbell}"></Image>
                     </Viewbox>
                 </Button>
+                <Button Name="samsung" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource samsung}"></Image>
+                    </Viewbox>
+                </Button>
             </StackPanel>
             <StackPanel Grid.Column="7">
                 <Button Name="run" Height="50">
@@ -305,9 +360,14 @@
                         <Image Source="{DynamicResource outlook}"></Image>
                     </Viewbox>
                 </Button>
+                <Button Name="bigdawgz" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource bigdawgz}"></Image>
+                    </Viewbox>
+                </Button>
             </StackPanel>
         </Grid>
-        <Button Grid.Row="1" 
+        <Button Grid.Row="2" 
                 Name="StopButton"
                 Command="{Binding StopSoundsCommand}"
                 Height="50" 

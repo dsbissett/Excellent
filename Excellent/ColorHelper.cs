@@ -1,5 +1,6 @@
 using System;
 using System.Windows.Media;
+using Color = System.Windows.Media.Color;
 
 public static class ColorHelper
 {

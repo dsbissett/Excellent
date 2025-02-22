@@ -193,6 +193,26 @@ namespace Excellent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        public static byte[] bigdawgz {
+            get {
+                object obj = ResourceManager.GetObject("bigdawgz", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] bigdog {
+            get {
+                object obj = ResourceManager.GetObject("bigdog", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         public static byte[] bing {
             get {
                 object obj = ResourceManager.GetObject("bing", resourceCulture);
@@ -896,6 +916,16 @@ namespace Excellent.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        public static byte[] samsung {
+            get {
+                object obj = ResourceManager.GetObject("samsung", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         public static byte[] sandstorm {
             get {
                 object obj = ResourceManager.GetObject("sandstorm", resourceCulture);
@@ -1029,6 +1059,16 @@ namespace Excellent.Properties {
         public static byte[] WhatchaSay {
             get {
                 object obj = ResourceManager.GetObject("WhatchaSay", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] whistle {
+            get {
+                object obj = ResourceManager.GetObject("whistle", resourceCulture);
                 return ((byte[])(obj));
             }
         }

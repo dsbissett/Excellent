@@ -1,20 +1,19 @@
-﻿using System.Windows;
+﻿namespace Excellent;
 
-namespace Excellent
+using Application = System.Windows.Application;
+
+public partial class App : Application
 {
-    public partial class App : Application
+    protected override void OnStartup(StartupEventArgs e)
     {
-        protected override void OnStartup(StartupEventArgs e)
-        {
-            base.OnStartup(e);
+        base.OnStartup(e);
 
-            var bootstrapper = new Bootstrapper();
+        var bootstrapper = new Bootstrapper();
 
-            var container = bootstrapper.CreateContainer();
+        var container = bootstrapper.CreateContainer();
 
-            var window = container.Locate<Views.MainWindow>();
+        var window = container.Locate<Views.MainWindow>();
 
-            window.Show();
-        }
+        window.Show();
     }
 }

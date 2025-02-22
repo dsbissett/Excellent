@@ -1,85 +1,98 @@
-﻿using System;
-using System.Windows;
-using System.Windows.Media;
+﻿using Application = System.Windows.Application;
+
+namespace Excellent.ViewModels.Implementations;
+
 using System.Reactive;
 using System.Reactive.Linq;
-using System.Collections.Generic;
-using System.Windows.Controls;
+using Button = System.Windows.Controls.Button;
+using Interfaces;
+using ReactiveUI;
+using Excellent.Interfaces;
 
-namespace Excellent.ViewModels.Implementations
+public class MainWindowViewModel : IMainWindowViewModel
 {
-    using Interfaces;
-    using ReactiveUI;
-    using System.Windows.Input;
-    using Excellent.Interfaces;
+    private readonly IAudioService _audioService;
+    private readonly IButtonService _buttonService;
+    private IDisposable? _colorUpdateSubscription;
+    private readonly Dictionary<string, Button> _buttonCache = new();
+    private readonly IObservable<double> _pitchObservable;
 
-    public class MainWindowViewModel : IMainWindowViewModel
+    public ReactiveCommand<Button, Unit> ButtonClickCommand { get; }
+    public ReactiveCommand<bool, Unit> ToggleColorChangeCommand { get; }
+    public ReactiveCommand<double, Unit> SetPitchCommand { get; }
+    public ReactiveCommand<Unit, Unit> StopSoundsCommand { get; }
+    
+    public IObservable<double> PitchValue => _pitchObservable;
+
+    private static double ClampPitch(double value) => Math.Clamp(value, 0.5, 2.0);
+
+    public MainWindowViewModel(IAudioService audioService, IButtonService buttonService)
     {
-        private readonly IAudioService audioService;
-        private readonly IButtonService buttonService;
-        private readonly IDisposable colorUpdateSubscription;
-        private readonly Dictionary<string, Button> buttonCache = new Dictionary<string, Button>();
-
-        public ReactiveCommand<Unit, Unit> StopSoundsCommand { get; }
+        _audioService = audioService;
+        _buttonService = buttonService;
         
-        public ReactiveCommand<Button, Unit> ButtonClickCommand { get; }
+        StopSoundsCommand = ReactiveCommand.CreateFromTask(async () => await _audioService.StopAllSounds());
+        
+        ButtonClickCommand = ReactiveCommand.CreateFromTask<Button>(
+            async button => await _buttonService.WhenButtonClicked(button));
 
-        // private double playbackPitch = 1.0;
-        // public double PlaybackPitch
-        // {
-        //     get => playbackPitch;
-        //     set
-        //     {
-        //         // Clamp the value between reasonable bounds
-        //         playbackPitch = Math.Clamp(value, 0.5, 2.0);
-        //         this.RaisePropertyChanged(nameof(PlaybackPitch));
-        //     }
-        // }
-
-        public MainWindowViewModel(IAudioService audioService, IButtonService buttonService)
+        SetPitchCommand = ReactiveCommand.Create<double>(pitch =>
         {
-            this.audioService = audioService;
-            this.buttonService = buttonService;
-            
-            StopSoundsCommand = ReactiveCommand.CreateFromTask(async () => await audioService.StopAllSounds());
-            
-            ButtonClickCommand = ReactiveCommand.CreateFromTask<Button>(
-                async button => await buttonService.WhenButtonClicked(button));
+            var clampedPitch = ClampPitch(pitch);
+            _audioService.SetPlaybackPitch(clampedPitch);
+        });
 
-            // Create an observable that emits every 5 seconds
-            colorUpdateSubscription = Observable
-                .Interval(TimeSpan.FromSeconds(1.5))
-                .Subscribe(_ => UpdateButtonColors());
-        }
+        // Create a separate observable for the pitch value that watches the input parameter
+        _pitchObservable = Observable.Merge(
+            new IObservable<double>[] { 
+                Observable.Return(1.0),
+                SetPitchCommand.Select(x => Convert.ToDouble(x))
+            }
+        );
 
-        public void RegisterButton(Button button)
+        ToggleColorChangeCommand = ReactiveCommand.Create<bool>(isEnabled => 
         {
-            if (!buttonCache.ContainsKey(button.Name))
+            _colorUpdateSubscription?.Dispose();
+            
+            if (isEnabled)
             {
-                buttonCache[button.Name] = button;
+                _colorUpdateSubscription = Observable
+                    .Interval(TimeSpan.FromSeconds(1.5))
+                    .Subscribe(_ => UpdateButtonColors());
+            }
+        });
+
+        // Start with color change enabled by default
+        ToggleColorChangeCommand.Execute(true).Subscribe();
+    }
+
+    public void RegisterButton(Button button)
+    {
+        if (!_buttonCache.ContainsKey(button.Name))
+        {
+            _buttonCache[button.Name] = button;
+            button.Background = new SolidColorBrush(ColorHelper.GetRandomColor());
+        }
+    }
+
+    private void UpdateButtonColors()
+    {
+        foreach (var button in _buttonCache.Values)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
                 button.Background = new SolidColorBrush(ColorHelper.GetRandomColor());
-            }
+            });
         }
+    }
 
-        private void UpdateButtonColors()
-        {
-            foreach (var button in buttonCache.Values)
-            {
-                Application.Current.Dispatcher.Invoke(() =>
-                {
-                    button.Background = new SolidColorBrush(ColorHelper.GetRandomColor());
-                });
-            }
-        }
+    public void Cleanup()
+    {
+        _colorUpdateSubscription?.Dispose();
+    }
 
-        public void Cleanup()
-        {
-            colorUpdateSubscription?.Dispose();
-        }
-
-        public static void DoStuff()
-        {
-            
-        }
+    public static void DoStuff()
+    {
+        
     }
 }

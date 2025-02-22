@@ -48,4 +48,6 @@
     <BitmapImage x:Key="drdre" UriSource="pack://application:,,,/Resources/lastepisode.png"></BitmapImage>
     <BitmapImage x:Key="outlook" UriSource="pack://application:,,,/Resources/outlook.png"></BitmapImage>
     <BitmapImage x:Key="glorilla" UriSource="pack://application:,,,/Resources/glorilla.png"></BitmapImage>
+    <BitmapImage x:Key="samsung" UriSource="pack://application:,,,/Resources/whistle.png"></BitmapImage>
+    <BitmapImage x:Key="bigdawgz" UriSource="pack://application:,,,/Resources/bigdog.png"></BitmapImage>
 </ResourceDictionary>

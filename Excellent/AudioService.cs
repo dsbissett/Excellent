@@ -1,106 +1,126 @@
-﻿using System.Linq;
+﻿using NAudio.Wave.SampleProviders;
 
-namespace Excellent
+namespace Excellent;
+
+using System.Threading.Tasks;
+using Annotations;
+using AudioHandlers;
+using Interfaces;
+using NAudio.Wave;
+using NAudio.Extras;
+using System.Collections.Generic;
+using System;
+
+public class AudioService : IAudioService
 {
-    using System.Threading.Tasks;
-    using Annotations;
-    using AudioHandlers;
-    using Interfaces;
-    using NAudio.Wave;
-    using System.Collections.Generic;
+    private readonly AudioHandler handlers;
+    private readonly List<WaveOutEvent> activeOutputs = new List<WaveOutEvent>();
+    private readonly object lockObject = new object();
+    private volatile bool isStopping;
+    private double currentPitch = 1.0;
 
-    public class AudioService : IAudioService
+    public AudioService()
     {
-        private readonly AudioHandler handlers;
-        private readonly List<WaveOutEvent> activeOutputs = new List<WaveOutEvent>();
-        private readonly object lockObject = new object();
-        private volatile bool isStopping;
+        var waveAudioHandler = new WaveAudioHandler();
+        var byteArrayAudioHandler = new ByteArrayAudioHandler();
+        waveAudioHandler.SetSuccessor(byteArrayAudioHandler);
+        this.handlers = waveAudioHandler;
+    }
 
-        public AudioService()
+    private WaveOutEvent ooter;
+
+    public void SetPlaybackPitch(double pitch)
+    {
+        currentPitch = pitch;
+    }
+
+    public void PlaySound([NotNull] WaveStream reader)
+    {
+        if (isStopping)
         {
-            var waveAudioHandler = new WaveAudioHandler();
-            var byteArrayAudioHandler = new ByteArrayAudioHandler();
-            waveAudioHandler.SetSuccessor(byteArrayAudioHandler);
-            this.handlers = waveAudioHandler;
+            reader.Dispose();
+            return;
         }
 
-        private WaveOutEvent ooter;
-
-        public void PlaySound([NotNull] WaveStream reader)
+        var waveOutEvent = new WaveOutEvent();
+        
+        lock (lockObject)
         {
             if (isStopping)
             {
                 reader.Dispose();
+                waveOutEvent.Dispose();
                 return;
             }
 
-            var waveOutEvent = new WaveOutEvent();
-            
-            lock (lockObject)
+            try 
             {
-                if (isStopping)
+                reader.Position = 0;
+                
+                // Apply pitch shifting if needed
+                if (Math.Abs(currentPitch - 1.0) > 0.01)
                 {
-                    reader.Dispose();
-                    waveOutEvent.Dispose();
-                    return;
+                    var pitchStream = new SmbPitchShiftingSampleProvider(reader.ToSampleProvider())
+                        {
+                            PitchFactor = (float)currentPitch
+                        };
+                    waveOutEvent.Init(pitchStream);
+                }
+                else
+                {
+                    waveOutEvent.Init(reader);
                 }
 
-                try 
+                waveOutEvent.PlaybackStopped += (s, e) =>
                 {
-                    reader.Position = 0;
-                    waveOutEvent.Init(reader);
-
-                    waveOutEvent.PlaybackStopped += (s, e) =>
+                    lock (lockObject)
                     {
-                        lock (lockObject)
-                        {
-                            activeOutputs.Remove(waveOutEvent);
-                        }
-                        reader.Dispose();
-                        waveOutEvent.Dispose();
-                    };
-                    
-                    activeOutputs.Add(waveOutEvent);
-                    waveOutEvent.Play();
+                        activeOutputs.Remove(waveOutEvent);
+                    }
+                    reader.Dispose();
+                    waveOutEvent.Dispose();
+                };
+                
+                activeOutputs.Add(waveOutEvent);
+                waveOutEvent.Play();
+            }
+            catch
+            {
+                reader.Dispose();
+                waveOutEvent.Dispose();
+                throw;
+            }
+        }
+    }
+
+    public Task PlaySoundAsync(object obj) => Task.Run(() =>
+    {
+        var reader = this.handlers.HandleRequest(obj);
+        this.PlaySound(reader);
+    });
+
+    public async Task StopAllSounds()
+    {
+        isStopping = true;
+        
+        lock (lockObject)
+        {
+            foreach (var output in activeOutputs.ToList())
+            {
+                try
+                {
+                    output.Stop();
                 }
                 catch
                 {
-                    reader.Dispose();
-                    waveOutEvent.Dispose();
-                    throw;
+                    // Ignore any errors during stop
                 }
             }
+            activeOutputs.Clear();
         }
 
-        public Task PlaySoundAsync(object obj) => Task.Run(() =>
-        {
-            var reader = this.handlers.HandleRequest(obj);
-            this.PlaySound(reader);
-        });
-
-        public async Task StopAllSounds()
-        {
-            isStopping = true;
-            
-            lock (lockObject)
-            {
-                foreach (var output in activeOutputs.ToList())
-                {
-                    try
-                    {
-                        output.Stop();
-                    }
-                    catch
-                    {
-                        // Ignore any errors during stop
-                    }
-                }
-                activeOutputs.Clear();
-            }
-
-            // Wait for the delay before allowing new sounds
-            await Task.Delay(100);
-            isStopping = false;
-        }
+        // Wait for the delay before allowing new sounds
+        await Task.Delay(100);
+        isStopping = false;
     }
 }

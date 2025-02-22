@@ -6,5 +6,6 @@
     {
         Task PlaySoundAsync(object obj);
         Task StopAllSounds();
+        void SetPlaybackPitch(double pitch);
     }
 }

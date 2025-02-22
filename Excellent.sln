@@ -1,11 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excellent", "Excellent\Excellent.csproj", "{4385BF2F-E1C5-4A0F-A255-96FA42B84869}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excellent.Wpf", "Excellent.Wpf\Excellent.Wpf.csproj", "{6257D173-18E2-4F38-90B5-DF37A71342BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,18 +27,6 @@ Global
 		{4385BF2F-E1C5-4A0F-A255-96FA42B84869}.Release|iPhone.Build.0 = Release|Any CPU
 		{4385BF2F-E1C5-4A0F-A255-96FA42B84869}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{4385BF2F-E1C5-4A0F-A255-96FA42B84869}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{6257D173-18E2-4F38-90B5-DF37A71342BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6257D173-18E2-4F38-90B5-DF37A71342BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6257D173-18E2-4F38-90B5-DF37A71342BB}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{6257D173-18E2-4F38-90B5-DF37A71342BB}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{6257D173-18E2-4F38-90B5-DF37A71342BB}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{6257D173-18E2-4F38-90B5-DF37A71342BB}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{6257D173-18E2-4F38-90B5-DF37A71342BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6257D173-18E2-4F38-90B5-DF37A71342BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6257D173-18E2-4F38-90B5-DF37A71342BB}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{6257D173-18E2-4F38-90B5-DF37A71342BB}.Release|iPhone.Build.0 = Release|Any CPU
-		{6257D173-18E2-4F38-90B5-DF37A71342BB}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{6257D173-18E2-4F38-90B5-DF37A71342BB}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
