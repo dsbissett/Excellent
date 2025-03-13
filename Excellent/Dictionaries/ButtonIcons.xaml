@@ -53,5 +53,7 @@
     <BitmapImage x:Key="bnyx" UriSource="pack://application:,,,/Resources/bnyx.png"></BitmapImage>
     <BitmapImage x:Key="winerror" UriSource="pack://application:,,,/Resources/winerror.png"></BitmapImage>
     <BitmapImage x:Key="xpshutdown" UriSource="pack://application:,,,/Resources/xpshutdown.png"></BitmapImage>
+    <BitmapImage x:Key="alicedj" UriSource="pack://application:,,,/Resources/alicedj.png"></BitmapImage>
+    <BitmapImage x:Key="ymca" UriSource="pack://application:,,,/Resources/ymca.png"></BitmapImage>
 
 </ResourceDictionary>

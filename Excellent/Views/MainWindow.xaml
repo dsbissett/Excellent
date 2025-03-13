@@ -389,6 +389,16 @@
                         <Image Source="{DynamicResource xpshutdown}"></Image>
                     </Viewbox>
                 </Button>
+                <Button Name="alicedj" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource alicedj}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="ymca" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource ymca}"></Image>
+                    </Viewbox>
+                </Button>
             </StackPanel>
         </Grid>
         <Button Grid.Row="2" 
