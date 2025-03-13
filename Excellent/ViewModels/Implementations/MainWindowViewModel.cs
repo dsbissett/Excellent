@@ -8,6 +8,7 @@ using Button = System.Windows.Controls.Button;
 using Interfaces;
 using ReactiveUI;
 using Excellent.Interfaces;
+using System.Reactive.Subjects;
 
 public class MainWindowViewModel : IMainWindowViewModel
 {
@@ -15,14 +16,22 @@ public class MainWindowViewModel : IMainWindowViewModel
     private readonly IButtonService _buttonService;
     private IDisposable? _colorUpdateSubscription;
     private readonly Dictionary<string, Button> _buttonCache = new();
-    private readonly IObservable<double> _pitchObservable;
+    private readonly BehaviorSubject<double> _pitchSubject = new(1.0);
+    public double CurrentPitch
+    {
+        get => _pitchSubject.Value;
+        set
+        {
+            _pitchSubject.OnNext(value);
+            SetPitchCommand.Execute(value).Subscribe();
+        }
+    }
 
     public ReactiveCommand<Button, Unit> ButtonClickCommand { get; }
     public ReactiveCommand<bool, Unit> ToggleColorChangeCommand { get; }
     public ReactiveCommand<double, Unit> SetPitchCommand { get; }
     public ReactiveCommand<Unit, Unit> StopSoundsCommand { get; }
-    
-    public IObservable<double> PitchValue => _pitchObservable;
+    public ReactiveCommand<Unit, Unit> ResetPitchCommand { get; }
 
     private static double ClampPitch(double value) => Math.Clamp(value, 0.5, 2.0);
 
@@ -40,15 +49,8 @@ public class MainWindowViewModel : IMainWindowViewModel
         {
             var clampedPitch = ClampPitch(pitch);
             _audioService.SetPlaybackPitch(clampedPitch);
+            _pitchSubject.OnNext(clampedPitch);
         });
-
-        // Create a separate observable for the pitch value that watches the input parameter
-        _pitchObservable = Observable.Merge(
-            new IObservable<double>[] { 
-                Observable.Return(1.0),
-                SetPitchCommand.Select(x => Convert.ToDouble(x))
-            }
-        );
 
         ToggleColorChangeCommand = ReactiveCommand.Create<bool>(isEnabled => 
         {
@@ -60,10 +62,20 @@ public class MainWindowViewModel : IMainWindowViewModel
                     .Interval(TimeSpan.FromSeconds(1.5))
                     .Subscribe(_ => UpdateButtonColors());
             }
+            else
+            {
+                ResetButtonsToDefaultColor();
+            }
         });
 
-        // Start with color change enabled by default
-        ToggleColorChangeCommand.Execute(true).Subscribe();
+        // Start with color change disabled by default
+        ToggleColorChangeCommand.Execute(false).Subscribe();
+
+        ResetPitchCommand = ReactiveCommand.Create(() =>
+        {
+            _pitchSubject.OnNext(1.0);
+            SetPitchCommand.Execute(1.0).Subscribe();
+        });
     }
 
     public void RegisterButton(Button button)
@@ -71,7 +83,7 @@ public class MainWindowViewModel : IMainWindowViewModel
         if (!_buttonCache.ContainsKey(button.Name))
         {
             _buttonCache[button.Name] = button;
-            button.Background = new SolidColorBrush(ColorHelper.GetRandomColor());
+            // Don't set initial random color - will be handled by ToggleColorChangeCommand
         }
     }
 
@@ -82,6 +94,17 @@ public class MainWindowViewModel : IMainWindowViewModel
             Application.Current.Dispatcher.Invoke(() =>
             {
                 button.Background = new SolidColorBrush(ColorHelper.GetRandomColor());
+            });
+        }
+    }
+
+    private void ResetButtonsToDefaultColor()
+    {
+        foreach (var button in _buttonCache.Values)
+        {
+            Application.Current.Dispatcher.Invoke(() =>
+            {
+                button.ClearValue(Button.BackgroundProperty);
             });
         }
     }

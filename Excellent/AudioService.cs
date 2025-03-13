@@ -60,10 +60,8 @@ public class AudioService : IAudioService
                 // Apply pitch shifting if needed
                 if (Math.Abs(currentPitch - 1.0) > 0.01)
                 {
-                    var pitchStream = new SmbPitchShiftingSampleProvider(reader.ToSampleProvider())
-                        {
-                            PitchFactor = (float)currentPitch
-                        };
+                    var pitchStream = new SmbPitchShiftingSampleProvider(reader.ToSampleProvider());
+                    pitchStream.PitchFactor = (float)currentPitch;
                     waveOutEvent.Init(pitchStream);
                 }
                 else

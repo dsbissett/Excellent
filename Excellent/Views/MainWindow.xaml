@@ -10,7 +10,7 @@
         xmlns:behaviors="clr-namespace:Excellent.Behaviors"
         x:Class="Excellent.Views.MainWindow"
         ResizeMode="NoResize"
-        mc:Ignorable="d" Height="500" Width="1000" Background="Transparent" Foreground="Transparent">
+        mc:Ignorable="d" Height="550" Width="1000" Background="Transparent" Foreground="Transparent">
     <Window.Resources>
         <!--<BitmapImage x:Key="Glock" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/glock.png"/>
         <BitmapImage x:Key="AirHorn" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pack://application:,,,/Resources/airhornpic.png"/>
@@ -46,7 +46,7 @@
                           Name="ColorChangeToggle"
                           Command="{Binding ToggleColorChangeCommand}"
                           CommandParameter="{Binding IsChecked, RelativeSource={RelativeSource Self}}"
-                          IsChecked="True"
+                          IsChecked="False"
                           Height="30" 
                           Margin="10,5"
                           HorizontalAlignment="Left"/>
@@ -55,11 +55,16 @@
                         Orientation="Horizontal" 
                         Margin="10,5">
                 <TextBlock Text="Pitch: " 
+                           Width="100"
+                           Height="50"
+                           Foreground="White"
                           VerticalAlignment="Center" 
                           Margin="0,0,5,0"/>
-                <Slider Width="150"
+                <Slider x:Name="PitchSlider"
+                        Width="150"
                         Minimum="0.5"
                         Maximum="2.0"
+                        Value="{Binding CurrentPitch, Mode=TwoWay}"
                         TickFrequency="0.1"
                         IsSnapToTickEnabled="True"
                         VerticalAlignment="Center">
@@ -67,23 +72,25 @@
                         <behaviors:EventToCommandBehavior 
                             Event="ValueChanged" 
                             Command="{Binding SetPitchCommand}"
-                            CommandParameter="{Binding Value, RelativeSource={RelativeSource AncestorType=Slider}}"/>
+                            CommandParameter="{Binding Value, RelativeSource={RelativeSource Self}}"/>
                     </i:Interaction.Behaviors>
                 </Slider>
-                <TextBlock VerticalAlignment="Center"
-                           Margin="5,0,0,0">
-                    <TextBlock.Text>
-                        <MultiBinding StringFormat="{}{0:F1}x">
-                            <Binding Path="PitchValue"/>
-                        </MultiBinding>
-                    </TextBlock.Text>
-                </TextBlock>
+                <TextBlock Text="{Binding Value, ElementName=PitchSlider, StringFormat={}{0:F1}x}"
+                           VerticalAlignment="Center"
+                           Foreground="White"
+                           Margin="5,0"/>
+                <Button Content="Reset"
+                        Command="{Binding ResetPitchCommand}"
+                        Padding="8,2"
+                        Margin="5,0,0,0"
+                        Style="{x:Null}"/>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="9*"/>
                 <ColumnDefinition Width="6*"/>
+                <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="5*"/>
@@ -363,6 +370,23 @@
                 <Button Name="bigdawgz" Height="50">
                     <Viewbox>
                         <Image Source="{DynamicResource bigdawgz}"></Image>
+                    </Viewbox>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Column="8">
+                <Button Name="bnyx" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource bnyx}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="winerror" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource winerror}"></Image>
+                    </Viewbox>
+                </Button>
+                <Button Name="xpshutdown" Height="50">
+                    <Viewbox>
+                        <Image Source="{DynamicResource xpshutdown}"></Image>
                     </Viewbox>
                 </Button>
             </StackPanel>

@@ -439,4 +439,22 @@
   <data name="samsung" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\samsung.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="bnyx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bnyx.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bnyxico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bnyx.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="xpshutdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xpshutdown.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="winerror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\winerror.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="xpshutdownico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\xpshutdown.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="winerrorico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\winerror.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
